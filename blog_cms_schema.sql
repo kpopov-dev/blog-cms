@@ -9,7 +9,7 @@ CREATE TABLE users (
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- Laguages
+-- Languages
 CREATE TABLE languages (
     id INT AUTO_INCREMENT PRIMARY KEY,
     code VARCHAR(5) UNIQUE NOT NULL,  -- 'en', 'ru', etc.
@@ -39,7 +39,7 @@ CREATE TABLE post_translations (
     FOREIGN KEY (language_code) REFERENCES languages(code)
 );
 
--- Categegories
+-- Categories
 CREATE TABLE categories (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -73,7 +73,7 @@ CREATE TABLE contact_forms (
     submitted_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- Setting (can be used for email SMTP, logos etc.)
+-- Settings (can be used for email SMTP, logos etc.)
 CREATE TABLE settings (
     id INT AUTO_INCREMENT PRIMARY KEY,
     setting_key VARCHAR(100) UNIQUE NOT NULL,
