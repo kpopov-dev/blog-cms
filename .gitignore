@@ -1,0 +1,24 @@
+
+# ColdFusion CMS Git Ignore
+
+# Ignore uploaded media
+assets/uploads/
+
+# IDE/editor settings
+.vscode/
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+*.env
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.swp
